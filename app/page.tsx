@@ -7,18 +7,12 @@ type BypassResponse = {
   slug?: string;
   url?: string;
   error?: string;
+  resolverUrl?: string;
 };
 
 const shortlinkOptions = [
   "Safelinku / SFL",
-  "Linkvertise",
-  "Work.ink",
-  "LootLabs",
-  "Lockr",
-  "Rekonise",
-  "Boost.ink",
-  "Sub2Unlock",
-  "AdMaven",
+  "BYPASS.VIP (multi-platform)",
 ];
 
 const loadingSteps = [
@@ -69,12 +63,13 @@ export default function Home() {
     if (!inputUrl || loading) return;
 
     if (selectedShortlink !== "Safelinku / SFL") {
-      const resolverUrl = "https://bypass-links.com/?url=" + encodeURIComponent(inputUrl) + "&ref=xiyu";
-      window.open(resolverUrl, "_blank", "noopener,noreferrer");
+      const resolverUrl = "https://bypass.vip/userscript.html?url=" + encodeURIComponent(inputUrl) + "&time=10&key=";
       setResult({
         success: false,
-        error: `${selectedShortlink} dibuka melalui layanan BypassLinks di tab baru. Jika tab tidak terbuka, izinkan pop-up untuk situs ini.`,
+        resolverUrl,
+        error: "BYPASS.VIP adalah resolver eksternal. XIYU tidak menjalankan engine resolver di server; link resolver disediakan di bawah dan tidak dibuka otomatis.",
       });
+      setCopied(false);
       return;
     }
 
@@ -245,7 +240,7 @@ export default function Home() {
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              placeholder={selectedShortlink === "Safelinku / SFL" ? "https://sfl.gl/example" : "Tempel link " + selectedShortlink + " di sini"}
+              placeholder={selectedShortlink === "Safelinku / SFL" ? "https://sfl.gl/example" : "Tempel link shortlink yang didukung BYPASS.VIP"}
               autoComplete="off"
               spellCheck={false}
               disabled={loading}
@@ -439,6 +434,25 @@ export default function Home() {
                 {result.error ||
                   "Terjadi kesalahan saat memproses tautan."}
               </p>
+              {result.resolverUrl && (
+                <div className="result-actions">
+                  <button
+                    type="button"
+                    className="copy-button"
+                    onClick={() => navigator.clipboard.writeText(result.resolverUrl || "")}
+                  >
+                    Copy resolver URL
+                  </button>
+                  <a
+                    href={result.resolverUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="open-button"
+                  >
+                    Buka BYPASS.VIP →
+                  </a>
+                </div>
+              )}
             </>
           )}
         </section>
