@@ -1,338 +1,89 @@
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=waving&color=0:211827,45:493044,100:CB799B&height=220&section=header&text=XIYU%20SKIP%20SHORTLINK&fontSize=36&fontColor=FCEAF2&animation=fadeIn&fontAlignY=38&desc=SELECT%20%E2%80%A2%20PASTE%20%E2%80%A2%20RESOLVE&descSize=15&descAlignY=58" width="100%" alt="XIYU SKIP SHORTLINK animated SVG banner"/>`{=html}
-
-`<img src="https://img.shields.io/badge/PROJECT-XIYU%20CODEX-CB799B?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="XIYU CODEX"/>`{=html}
-`<img src="https://img.shields.io/badge/SHORTLINK-RESOLVER-493044?style=for-the-badge&logo=linktree&logoColor=FFFFFF" alt="Shortlink resolver"/>`{=html}
-`<img src="https://img.shields.io/badge/UI-MOBILE%20FIRST-6C4058?style=for-the-badge&logo=responsive&logoColor=FFFFFF" alt="Mobile first"/>`{=html}
-
-`<br/>`{=html}
-
-### 🔗 Pilih shortlink · Tempel URL · Jalankan proses
-
-`<sub>`{=html}Elegant dark-pink interface • Responsive layout • Animated
-UI`</sub>`{=html}
-:::
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=ABOUT%20THE%20PROJECT&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="About the project section"/>`{=html}
-:::
-
-## 💗 XIYU SKIP SHORTLINK
-
-**XIYU SKIP SHORTLINK** adalah aplikasi web untuk memilih layanan
-shortlink, memasukkan tautan, lalu menjalankan alur pemrosesan sesuai
-layanan yang dipilih.
-
-Aplikasi mempertahankan UI lama XIYU dengan identitas baru: tema
-rose-pink dan charcoal, kartu rounded, efek glow, dropdown berdesain,
-serta animasi transisi. Fokusnya tetap sederhana: pengguna memilih
-layanan dari atas kolom input, memasukkan URL, lalu menekan tombol
-proses.
-
-> **Catatan integrasi:** Safelinku/SFL diproses melalui endpoint API
-> XIYU. Delapan pilihan lainnya saat ini membuka resolver eksternal
-> BypassLinks di tab baru. Opsi tersebut belum memakai backend internal
-> yang sama dengan Safelinku.
-
-::: {align="center"}
-`<img src="https://img.shields.io/badge/9-SHORTLINK%20OPTIONS-CB799B?style=for-the-badge"/>`{=html}
-`<img src="https://img.shields.io/badge/1-UNIFIED%20INTERFACE-493044?style=for-the-badge"/>`{=html}
-`<img src="https://img.shields.io/badge/ANIMATED-UI-6C4058?style=for-the-badge"/>`{=html}
-:::
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=FEATURES&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Features section"/>`{=html}
-:::
-
-## ✨ Fitur Utama
-
-```{=html}
-<table>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 🎛️ Pemilih shortlink
-
-Dropdown berdesain di atas kolom input. Pengguna dapat memilih layanan
-tanpa berpindah halaman.
-
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 🔗 Input URL
-
-Kolom untuk memasukkan tautan shortlink. Placeholder mengikuti layanan
-yang dipilih.
-
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### ⚙️ Proses Safelinku
-
-Mengirim URL ke endpoint internal `/api/bypass`, lalu meneruskan request
-ke API XIYU.
-
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 🌐 Resolver eksternal
-
-Delapan pilihan tambahan membuka BypassLinks di tab baru. Hasil
-bergantung pada layanan eksternal.
-
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-<tr>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### ⏳ Status proses
-
-Alur Safelinku menampilkan status proses dan hasil pemrosesan.
-
-```{=html}
-</td>
-```
-```{=html}
-<td width="50%" valign="top">
-```
-### 📋 Aksi hasil
-
-Destination URL dapat disalin atau dibuka. Tombol reset membersihkan
-input dan hasil.
-
-```{=html}
-</td>
-```
-```{=html}
-</tr>
-```
-```{=html}
-</table>
-```
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=SUPPORTED%20SHORTLINKS&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Supported shortlinks section"/>`{=html}
-:::
-
-## 🔗 Daftar layanan
-
-   \#  Layanan           Integrasi
-  ---- ----------------- --------------------
-   01  Safelinku / SFL   API XIYU
-   02  Linkvertise       Resolver eksternal
-   03  Work.ink          Resolver eksternal
-   04  LootLabs          Resolver eksternal
-   05  Lockr             Resolver eksternal
-   06  Rekonise          Resolver eksternal
-   07  Boost.ink         Resolver eksternal
-   08  Sub2Unlock        Resolver eksternal
-   09  AdMaven           Resolver eksternal
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=HOW%20IT%20WORKS&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="How it works section"/>`{=html}
-:::
-
-## 🔄 Alur kerja
-
-``` mermaid
-flowchart TD
-    A["🎛️ Pilih layanan"] --> B["🔗 Masukkan URL"]
-    B --> C["⚡ Jalankan proses"]
-    C --> D{"Layanan dipilih?"}
-    D -->|Safelinku / SFL| E["API internal XIYU"]
-    E --> F["Destination URL"]
-    F --> G["📋 Salin atau buka"]
-    D -->|8 layanan lain| H["Resolver BypassLinks"]
-    H --> I["🌐 Dibuka di tab baru"]
-    style A fill:#493044,stroke:#CB799B,color:#FFFFFF
-    style B fill:#493044,stroke:#CB799B,color:#FFFFFF
-    style C fill:#6C4058,stroke:#E8A8BC,color:#FFFFFF
-    style D fill:#211827,stroke:#CB799B,color:#FFFFFF
-    style E fill:#493044,stroke:#CB799B,color:#FFFFFF
-    style F fill:#6C4058,stroke:#E8A8BC,color:#FFFFFF
-    style G fill:#493044,stroke:#CB799B,color:#FFFFFF
-    style H fill:#493044,stroke:#CB799B,color:#FFFFFF
-    style I fill:#6C4058,stroke:#E8A8BC,color:#FFFFFF
-```
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=INSTALLATION&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Installation section"/>`{=html}
-:::
-
-## 🚀 Instalasi lokal
-
-**Persyaratan:** Node.js yang kompatibel dengan Next.js project dan npm.
-
-### 1. Masuk ke folder project
-
-``` bash
-cd AIXI-SAFELINKU-main
-```
-
-### 2. Install dependency
-
-``` bash
-npm install
-```
-
-### 3. Jalankan development server
-
-``` bash
-npm run dev
-```
-
-Buka `http://localhost:3000` di browser.
-
-### Build production
-
-``` bash
-npm run build
-npm start
-```
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=text&text=API%20REFERENCE&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="API reference section"/>`{=html}
-:::
-
-## ⚙️ Endpoint
-
-### API internal
-
-``` http
-POST /api/bypass
-Content-Type: application/json
-```
-
-Request body:
-
-``` json
-{
-  "url": "https://sfl.gl/example"
-}
-```
-
-Route internal meneruskan URL ke API Safelinku XIYU dan mengembalikan
-response ke frontend.
-
-### API upstream Safelinku
-
-``` text
-https://xiyu-safelinku-api.vercel.app
-```
-
-Endpoint yang dirujuk aplikasi:
-
--   `GET /bypass?url=<shortlink-url>`
--   `GET /bypass?slug=<slug>`
--   `GET /api/health`
-
-Source aplikasi ini menyertakan route proxy Next.js, bukan source
-backend upstream.
-
-### Resolver eksternal
-
-Pilihan selain Safelinku membuka resolver dengan URL yang di-encode:
-
-``` text
-https://bypass-links.com/?url=<encoded-url>&ref=xiyu
-```
-
-Resolver dibuka di tab baru. Jika tidak terbuka, periksa apakah browser
-memblokir pop-up.
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=PROJECT%20STRUCTURE&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Project structure section"/>`{=html}
-:::
-
-## 📁 Struktur project
-
-``` text
-AIXI-SAFELINKU-main/
-├── app/
-│   ├── api/
-│   │   └── bypass/
-│   │       └── route.ts
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── public/
-│   └── hero.jpg
-├── package.json
-└── README.md
-```
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=VISUAL%20IDENTITY&text=VISUAL%20IDENTITY&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Visual identity section"/>`{=html}
-:::
-
-## 🎨 Identitas visual
-
-::: {align="center"}
-`<img src="https://img.shields.io/badge/ROSE%20PINK-CB799B?style=for-the-badge"/>`{=html}
-`<img src="https://img.shields.io/badge/DEEP%20PURPLE-493044?style=for-the-badge"/>`{=html}
-`<img src="https://img.shields.io/badge/CHARCOAL-211827?style=for-the-badge"/>`{=html}
-`<img src="https://img.shields.io/badge/SOFT%20PINK-E8A8BC?style=for-the-badge"/>`{=html}
-:::
-
--   **Glassmorphism:** kartu transparan dan efek blur.
--   **Soft glow:** pencahayaan lembut pada elemen visual.
--   **Rounded UI:** komponen dengan sudut membulat.
--   **Responsive layout:** menyesuaikan ukuran layar.
--   **Micro animation:** hover, loading, dropdown, dan transisi.
-
-------------------------------------------------------------------------
-
-::: {align="center"}
-`<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B4969,55:493044,100:211827&height=180&section=footer&text=XIYU%20CODEX&fontSize=32&fontColor=FCEAF2&animation=fadeIn&fontAlignY=65" width="100%" alt="XIYU CODEX footer banner"/>`{=html}
-
-`<img src="https://img.shields.io/badge/COPYRIGHT-©%20XIYU%20CODEX-E8A8BC?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="Copyright XIYU CODEX"/>`{=html}
-
-`<br/>`{=html}
-
-`<sub>`{=html}© XIYU CODEX. All rights reserved.`</sub>`{=html}
-`<br/>`{=html} `<sub>`{=html}XIYU SKIP SHORTLINK · AIXI
-PROJECT`</sub>`{=html} `<br/>`{=html}`<br/>`{=html} `<sub>`{=html}🔗
-Clean links. Clear flow. ✦`</sub>`{=html}
-:::
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=30&duration=2500&pause=900&color=BDA4FF&center=true&vCenter=true&width=900&height=80&lines=XIYU+SKIP+SHORTLINK" alt="XIYU SKIP SHORTLINK">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=900&height=45&lines=Shortlink+resolver+with+a+clean%2C+responsive+interface." alt="Shortlink resolver with a clean, responsive interface.">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PROJECT-XIYU%20CODEX-8B5CF6?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/INTERFACE-RESPONSIVE-6D28D9?style=for-the-badge">
+  <img src="https://img.shields.io/badge/FORMAT-SVG%20README-C4B5FD?style=for-the-badge">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=ABOUT+THE+PROJECT" alt="About the project">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=100&lines=XIYU+SKIP+SHORTLINK+is+a+web+interface+for+processing+supported+shortlinks.;Choose+a+service%2C+paste+the+shortlink%2C+then+start+the+process.;The+result+can+be+copied+or+opened+when+the+resolver+returns+a+destination." alt="Project overview">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=SUPPORTED+SERVICES" alt="Supported services">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=100&lines=Safelinku+%2F+SFL+%7C+Linkvertise+%7C+Work.ink;LootLabs+%7C+Lockr+%7C+Rekonise;Boost.ink+%7C+Sub2Unlock+%7C+AdMaven" alt="Supported services list">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=HOW+TO+USE" alt="How to use">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=120&lines=01+%E2%80%A2+Select+the+shortlink+service+from+the+dropdown.;02+%E2%80%A2+Paste+the+shortlink+into+the+input+field.;03+%E2%80%A2+Press+the+process+button+and+wait+for+the+result.;04+%E2%80%A2+Copy+or+open+the+destination+URL.;05+%E2%80%A2+Use+reset+to+clear+the+form+and+start+again." alt="How to use steps">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=FEATURES" alt="Features">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=140&lines=Service+dropdown+with+matching+input+placeholder.;Safelinku+%2F+SFL+requests+are+processed+through+the+XIYU+API.;Other+supported+services+open+the+external+resolver+in+a+new+tab.;Processing+status+and+the+returned+destination+are+shown+in+the+interface.;Copy%2C+open%2C+and+reset+controls+are+provided+for+the+result." alt="Project features">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=TECHNOLOGY+AND+DESIGN" alt="Technology and design">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=120&lines=Built+with+Next.js+and+TypeScript.;The+interface+uses+rose+pink%2C+deep+purple%2C+and+charcoal.;Glass-style+surfaces%2C+soft+glow%2C+rounded+elements%2C;responsive+layout%2C+and+micro-animations+shape+the+visual+style." alt="Technology and design details">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=LOCAL+DEVELOPMENT" alt="Local development">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=120&lines=Install+Node.js%2C+then+install+the+project+dependencies.;Run+npm+install+to+prepare+the+project.;Run+npm+run+dev+to+start+the+development+server.;Open+localhost%3A3000+in+your+browser.;For+production%2C+run+npm+run+build+then+npm+start." alt="Local development instructions">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=API+INFORMATION" alt="API information">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=160&lines=Internal+route%3A+POST+%2Fapi%2Fbypass;Request+body%3A+JSON+object+containing+the+url+field;XIYU+API+base%3A+xiyu-safelinku-api.vercel.app;Supported+upstream+routes%3A+%2Fbypass%3Furl%3D...+and+%2Fbypass%3Fslug%3D...;Health+route%3A+%2Fapi%2Fhealth;External+resolver%3A+bypass-links.com%2F%3Furl%3D...%26ref%3Dxiyu" alt="API information">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=PROJECT+STRUCTURE" alt="Project structure">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=160&lines=app%2Fapi%2Fbypass%2Froute.ts+%E2%80%A2+Bypass+API+route;app%2Fglobals.css+%E2%80%A2+Global+styles;app%2Flayout.tsx+%E2%80%A2+Root+layout;app%2Fpage.tsx+%E2%80%A2+Main+interface;public%2Fhero.jpg+%E2%80%A2+Hero+image;package.json+%E2%80%A2+Project+scripts+and+dependencies" alt="Project structure">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=600&size=22&duration=1&pause=999999&color=C4B5FD&center=true&vCenter=true&width=900&height=45&lines=DISCLAIMER" alt="Disclaimer">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&size=16&duration=1&pause=999999&color=E6DFFF&center=true&vCenter=true&width=1000&height=100&lines=This+project+is+an+independent+tool+and+is+not+affiliated+with;the+listed+shortlink+services.+Availability+depends+on+the;service+and+the+shortlink+being+processed." alt="Disclaimer details">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=1&pause=999999&color=BDA4FF&center=true&vCenter=true&width=900&height=60&lines=XIYU+CODEX+%C2%A9+2026" alt="XIYU CODEX copyright">
+</p>
