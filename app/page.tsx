@@ -6,6 +6,14 @@ type BypassResponse = {
   success?: boolean;
   slug?: string;
   url?: string;
+  destination?: string;
+  title?: string;
+  platform?: string;
+  author?: string;
+  duration?: string;
+  elapsed_ms?: number;
+  is_premium_only?: boolean;
+  metadata?: Record<string, unknown>;
   error?: string;
 };
 
@@ -13,24 +21,13 @@ const shortlinkOptions = [
   "Safelinku / SFL",
   "Linkvertise",
   "LootLabs",
-  "Boost.ink",
-  "Rekonise",
-  "Sub2Unlock / Sub4Unlock",
-  "Adfoc.us",
-  "Cuty.io / Cety.app",
-  "mboost.me / bst.gg / booo.st",
-  "Paster.so / Paster.gg",
-  "Social Unlock / SocialWolvez",
-  "YTSUBME",
-  "V.GD",
-  "Other BYPASS.VIP-supported domains",
 ];
 
 const loadingSteps = [
   "Memvalidasi tautan",
-  "Menghubungkan ke XIYU API",
-  "Memproses safelink",
-  "Menyiapkan destination URL",
+  "Menyiapkan resolver",
+  "Memproses tautan",
+  "Menyiapkan hasil",
 ];
 
 export default function Home() {
@@ -73,16 +70,6 @@ export default function Home() {
 
     if (!inputUrl || loading) return;
 
-    if (selectedShortlink !== "Safelinku / SFL") {
-      setLoading(false);
-      setResult({
-        success: false,
-        error: `${selectedShortlink} tercantum dalam daftar dukungan userscript BYPASS.VIP, tetapi source yang tersedia hanya userscript pemanggil layanan eksternal—bukan engine/API resolver. XIYU tidak akan membuka atau mengalihkan ke website lain. Resolver internal untuk pilihan ini belum tersedia.`,
-      });
-      setCopied(false);
-      return;
-    }
-
     setLoading(true);
     setResult(null);
     setCopied(false);
@@ -95,6 +82,7 @@ export default function Home() {
         },
         body: JSON.stringify({
           url: inputUrl,
+          platform: selectedShortlink,
         }),
       });
 
@@ -111,7 +99,13 @@ export default function Home() {
         };
       }
 
-      setResult(data);
+      const normalized: BypassResponse = {
+        ...data,
+        url: data.url || data.destination || undefined,
+        platform: data.platform || selectedShortlink,
+        success: Boolean(data.success && (data.url || data.destination)),
+      };
+      setResult(normalized);
     } catch {
       setResult({
         success: false,
@@ -186,7 +180,7 @@ export default function Home() {
           </h1>
 
           <p className="hero-description">
-            Pilih layanan shortlink, tempel tautannya, lalu lanjutkan proses bypass dengan tampilan XIYU yang sama.
+            Pilih platform, tempel tautannya, dan lihat status serta hasil proses di halaman XIYU.
           </p>
         </div>
       </section>
@@ -250,7 +244,13 @@ export default function Home() {
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              placeholder={selectedShortlink === "Safelinku / SFL" ? "https://sfl.gl/example" : "Tempel link " + selectedShortlink + " di sini"}
+              placeholder={
+                selectedShortlink === "Safelinku / SFL"
+                  ? "https://sfl.gl/example"
+                  : selectedShortlink === "Linkvertise"
+                    ? "https://linkvertise.com/..."
+                    : "https://loot-reward.com/t?cc=..."
+              }
               autoComplete="off"
               spellCheck={false}
               disabled={loading}
@@ -397,6 +397,16 @@ export default function Home() {
                 </div>
               )}
 
+              {(result.title || result.platform || result.duration || result.author || typeof result.is_premium_only === "boolean") && (
+                <div className="result-meta">
+                  {result.platform && <span>Platform: {result.platform}</span>}
+                  {result.title && <span>Title: {result.title}</span>}
+                  {result.author && <span>Author: {result.author}</span>}
+                  {result.duration && <span>Durasi: {result.duration}</span>}
+                  {typeof result.is_premium_only === "boolean" && <span>Premium only: {result.is_premium_only ? "Ya" : "Tidak"}</span>}
+                </div>
+              )}
+
               <div className="result-url">
                 {destinationUrl}
               </div>
@@ -440,6 +450,7 @@ export default function Home() {
                 </div>
               </div>
 
+              {result.platform && <div className="result-meta"><span>Platform: {result.platform}</span></div>}
               <p className="error-message">
                 {result.error ||
                   "Terjadi kesalahan saat memproses tautan."}
