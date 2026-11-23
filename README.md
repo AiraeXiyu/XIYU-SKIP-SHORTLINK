@@ -23,16 +23,16 @@
 
 **XIYU SKIP SHORTLINK** adalah aplikasi web untuk memilih layanan shortlink, memasukkan tautan, lalu menjalankan alur pemrosesan sesuai layanan yang dipilih. UI mempertahankan gaya visual XIYU: warna rose-pink, latar lembut, kartu glass, tipografi elegan, dan komponen interaktif.
 
-> ⚠️ **Catatan integrasi:** Safelinku/SFL diproses melalui endpoint API XIYU. Pilihan BYPASS.VIP menggunakan URL resolver eksternal berdasarkan userscript yang diberikan; XIYU menampilkan link resolver dan tidak membukanya otomatis. Source userscript tersebut bukan engine resolver/backend yang bisa dijalankan langsung oleh XIYU.
+> ⚠️ **Catatan integrasi:** Safelinku/SFL diproses melalui endpoint API XIYU. Platform lain dari daftar userscript BYPASS.VIP baru ditampilkan sebagai pilihan; engine/API resolver tidak tersedia di source yang diberikan, jadi tidak ada redirect eksternal.
 
 ## 🧭 Fitur
 
 | Fitur | Keterangan |
 |---|---|
-| 🎛️ Pemilih layanan | Dropdown berisi Safelinku/SFL dan BYPASS.VIP multi-platform. |
+| 🎛️ Pemilih shortlink | Dropdown berisi Safelinku/SFL dan platform yang tercantum dalam userscript BYPASS.VIP. |
 | 🔗 Input tautan | Input URL dengan placeholder menyesuaikan layanan pilihan. |
 | ⚙️ Proses Safelinku | Mengirim URL ke endpoint lokal `/api/bypass`, lalu meneruskan request ke API XIYU. |
-| 🌐 Resolver eksternal | BYPASS.VIP resolver URL ditampilkan di halaman XIYU dengan opsi Copy dan Buka; tidak auto-redirect. |
+| 🧾 Status resolver | Pilihan yang belum memiliki engine internal menampilkan penjelasan di XIYU; tidak ada redirect eksternal. |
 | ⏳ Status proses | Animasi loading dan tahapan proses untuk alur Safelinku. |
 | ✅ Hasil resolve | Menampilkan destination URL dan slug bila tersedia dari API. |
 | 📋 Salin & buka | Menyalin destination URL atau membukanya di tab baru. |
@@ -40,12 +40,28 @@
 | 📱 Mobile-first | Layout responsif dengan lebar maksimum 560px. |
 | 🎨 UI animatif | Glow latar, hover, spinner, transisi dropdown, dan animasi status. |
 
-## 🧩 Layanan di dropdown
+## 🧩 Pilihan shortlink
 
-1. **Safelinku / SFL** — diproses melalui API XIYU yang sudah tersedia.
-2. **BYPASS.VIP (multi-platform)** — daftar host dalam userscript mencakup Linkvertise, Boost.ink, Rekonise, Sub2Unlock, LootLabs, AdFoc.us, cuty.io, mboost.me, bst.gg, booo.st, paster.so/paster.gg, social-unlock, sub2get, sub4unlock, ytsubme, dan host lain yang tercantum di metadata userscript.
+Dropdown menampilkan Safelinku/SFL (resolver API yang sudah terhubung di XIYU) dan platform/domain yang terdaftar pada userscript BYPASS.VIP yang diberikan sebagai referensi:
 
-Pilihan BYPASS.VIP merupakan tautan ke resolver eksternal, bukan integrasi engine internal XIYU. Host yang tidak tercantum dalam userscript tidak dijamin didukung.
+- Safelinku / SFL (resolver API XIYU yang tersedia)
+- Linkvertise
+- LootLabs (loot-labs.com, links.lootlabs.gg, lootlabs.com)
+- Boost.ink
+- Rekonise
+- Sub2Unlock / Sub4Unlock (termasuk domain variasinya)
+- Adfoc.us
+- Cuty.io / Cety.app
+- mboost.me / bst.gg / booo.st
+- Paster.so / Paster.gg
+- Social Unlock / SocialWolvez
+- YTSUBME
+- V.GD
+- Other BYPASS.VIP-supported domains (domain lain yang tercantum pada userscript)
+
+Work.ink, Lockr, dan AdMaven tidak tercantum pada `@match` userscript yang diberikan, sehingga tidak ditampilkan sebagai opsi.
+
+**Penting:** userscript BYPASS.VIP yang tersedia hanya mengarahkan halaman ke layanan BYPASS.VIP dan menerima redirect URL. Itu bukan source engine/API resolver. Selain Safelinku/SFL, pilihan-pilihan di dropdown untuk saat ini hanya daftar platform yang tercantum; XIYU menampilkan status keterbatasan di halaman XIYU dan **tidak membuka, tidak redirect, dan tidak memindahkan pengguna ke website resolver eksternal**.
 
 ## 🚀 Menjalankan secara lokal
 
@@ -78,12 +94,12 @@ Pilih layanan → Tempel URL → Klik RESOLVE LINK
                                 │
                 ┌───────────────┴────────────────┐
                 │                                │
-          Safelinku / SFL                  BYPASS.VIP
+          Safelinku / SFL                Pilihan lainnya
                 │                                │
-        POST /api/bypass             Resolver URL ditampilkan
-                │                    (tidak auto-open)
-        XIYU API /bypass                      │
-                │                         Copy / Buka
+        POST /api/bypass              Status keterbatasan
+                │                     ditampilkan di XIYU
+        XIYU API /bypass              tanpa redirect eksternal
+                │
         Destination URL
                 │
          Copy / Buka
@@ -121,15 +137,9 @@ Frontend API information juga mencantumkan endpoint berikut:
 
 > Endpoint di atas merupakan informasi API upstream yang ditampilkan aplikasi. Source project ini hanya menyertakan route proxy Next.js `POST /api/bypass`, bukan source backend upstream.
 
-### BYPASS.VIP resolver
+### Platform lain
 
-Frontend membentuk URL sesuai userscript BYPASS.VIP yang diberikan:
-
-```text
-https://bypass.vip/userscript.html?url=<encoded-url>&time=10&key=
-```
-
-URL resolver ditampilkan di hasil XIYU, dengan tombol **Copy resolver URL** dan **Buka BYPASS.VIP**. Link tidak dibuka otomatis. Userscript yang diberikan hanya launcher ke layanan BYPASS.VIP; source tersebut tidak memuat implementasi API/engine resolver, sehingga XIYU belum bisa mengembalikan destination URL secara internal untuk platform-platform tersebut.
+Platform lain saat ini belum memiliki engine resolver internal pada repository ini. UI tidak memanggil website resolver eksternal dan tidak melakukan redirect. Source userscript BYPASS.VIP yang diberikan hanya menunjukkan daftar `@match` dan alur pemanggilan layanan eksternal; source API/engine resolver tidak disertakan.
 
 ## 📁 Struktur project
 

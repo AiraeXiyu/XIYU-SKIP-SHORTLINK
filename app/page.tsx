@@ -7,12 +7,23 @@ type BypassResponse = {
   slug?: string;
   url?: string;
   error?: string;
-  resolverUrl?: string;
 };
 
 const shortlinkOptions = [
   "Safelinku / SFL",
-  "BYPASS.VIP (multi-platform)",
+  "Linkvertise",
+  "LootLabs",
+  "Boost.ink",
+  "Rekonise",
+  "Sub2Unlock / Sub4Unlock",
+  "Adfoc.us",
+  "Cuty.io / Cety.app",
+  "mboost.me / bst.gg / booo.st",
+  "Paster.so / Paster.gg",
+  "Social Unlock / SocialWolvez",
+  "YTSUBME",
+  "V.GD",
+  "Other BYPASS.VIP-supported domains",
 ];
 
 const loadingSteps = [
@@ -63,11 +74,10 @@ export default function Home() {
     if (!inputUrl || loading) return;
 
     if (selectedShortlink !== "Safelinku / SFL") {
-      const resolverUrl = "https://bypass.vip/userscript.html?url=" + encodeURIComponent(inputUrl) + "&time=10&key=";
+      setLoading(false);
       setResult({
         success: false,
-        resolverUrl,
-        error: "BYPASS.VIP adalah resolver eksternal. XIYU tidak menjalankan engine resolver di server; link resolver disediakan di bawah dan tidak dibuka otomatis.",
+        error: `${selectedShortlink} tercantum dalam daftar dukungan userscript BYPASS.VIP, tetapi source yang tersedia hanya userscript pemanggil layanan eksternal—bukan engine/API resolver. XIYU tidak akan membuka atau mengalihkan ke website lain. Resolver internal untuk pilihan ini belum tersedia.`,
       });
       setCopied(false);
       return;
@@ -240,7 +250,7 @@ export default function Home() {
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              placeholder={selectedShortlink === "Safelinku / SFL" ? "https://sfl.gl/example" : "Tempel link shortlink yang didukung BYPASS.VIP"}
+              placeholder={selectedShortlink === "Safelinku / SFL" ? "https://sfl.gl/example" : "Tempel link " + selectedShortlink + " di sini"}
               autoComplete="off"
               spellCheck={false}
               disabled={loading}
@@ -434,25 +444,6 @@ export default function Home() {
                 {result.error ||
                   "Terjadi kesalahan saat memproses tautan."}
               </p>
-              {result.resolverUrl && (
-                <div className="result-actions">
-                  <button
-                    type="button"
-                    className="copy-button"
-                    onClick={() => navigator.clipboard.writeText(result.resolverUrl || "")}
-                  >
-                    Copy resolver URL
-                  </button>
-                  <a
-                    href={result.resolverUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="open-button"
-                  >
-                    Buka BYPASS.VIP →
-                  </a>
-                </div>
-              )}
             </>
           )}
         </section>
