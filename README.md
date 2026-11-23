@@ -1,63 +1,219 @@
-<div align="center">
-  <img src="docs/xiyu-banner.svg" alt="XIYU SKIP SHORTLINK • Animated banner" width="100%" />
-  <br />
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15.5.27-111111?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/React-19.1.0-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img alt="License" src="https://img.shields.io/badge/Copyright-XIYU%20CODEX-e8a8bc?style=for-the-badge" />
-  <br /><br />
-  <b>🔗 Pilih shortlink. Tempel URL. Lanjutkan proses.</b>
-  <br />
-  <sub>Tool antarmuka shortlink dengan tampilan elegan, responsif, dan animasi halus.</sub>
-</div>
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=waving&color=0:211827,45:493044,100:CB799B&height=220&section=header&text=XIYU%20SKIP%20SHORTLINK&fontSize=36&fontColor=FCEAF2&animation=fadeIn&fontAlignY=38&desc=SELECT%20%E2%80%A2%20PASTE%20%E2%80%A2%20RESOLVE&descSize=15&descAlignY=58" width="100%" alt="XIYU SKIP SHORTLINK animated SVG banner"/>`{=html}
 
----
+`<img src="https://img.shields.io/badge/PROJECT-XIYU%20CODEX-CB799B?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="XIYU CODEX"/>`{=html}
+`<img src="https://img.shields.io/badge/SHORTLINK-RESOLVER-493044?style=for-the-badge&logo=linktree&logoColor=FFFFFF" alt="Shortlink resolver"/>`{=html}
+`<img src="https://img.shields.io/badge/UI-MOBILE%20FIRST-6C4058?style=for-the-badge&logo=responsive&logoColor=FFFFFF" alt="Mobile first"/>`{=html}
 
-## ✨ Tentang XIYU SKIP SHORTLINK
+`<br/>`{=html}
 
-**XIYU SKIP SHORTLINK** adalah aplikasi web untuk memilih layanan shortlink, memasukkan tautan, lalu menjalankan alur pemrosesan sesuai layanan yang dipilih. UI mempertahankan gaya visual XIYU: warna rose-pink, latar lembut, kartu glass, tipografi elegan, dan komponen interaktif.
+### 🔗 Pilih shortlink · Tempel URL · Jalankan proses
 
-> ⚠️ **Catatan integrasi:** Safelinku/SFL diproses melalui endpoint API XIYU. Delapan pilihan lain saat ini membuka layanan resolver eksternal **BypassLinks** di tab baru. Pilihan tersebut belum menggunakan integrasi backend internal yang sama dengan Safelinku.
+`<sub>`{=html}Elegant dark-pink interface • Responsive layout • Animated
+UI`</sub>`{=html}
+:::
 
-## 🧭 Fitur
+------------------------------------------------------------------------
 
-| Fitur | Keterangan |
-|---|---|
-| 🎛️ Pemilih shortlink | Dropdown berdesain dengan 9 pilihan layanan. |
-| 🔗 Input tautan | Input URL dengan placeholder menyesuaikan layanan pilihan. |
-| ⚙️ Proses Safelinku | Mengirim URL ke endpoint lokal `/api/bypass`, lalu meneruskan request ke API XIYU. |
-| 🌐 Resolver eksternal | Opsi selain Safelinku membuka BypassLinks di tab baru. |
-| ⏳ Status proses | Animasi loading dan tahapan proses untuk alur Safelinku. |
-| ✅ Hasil resolve | Menampilkan destination URL dan slug bila tersedia dari API. |
-| 📋 Salin & buka | Menyalin destination URL atau membukanya di tab baru. |
-| 🧹 Reset input | Tombol hapus untuk mengosongkan URL dan hasil. |
-| 📱 Mobile-first | Layout responsif dengan lebar maksimum 560px. |
-| 🎨 UI animatif | Glow latar, hover, spinner, transisi dropdown, dan animasi status. |
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=ABOUT%20THE%20PROJECT&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="About the project section"/>`{=html}
+:::
 
-## 🧩 Shortlink yang tersedia
+## 💗 XIYU SKIP SHORTLINK
 
-1. Safelinku / SFL
-2. Linkvertise
-3. Work.ink
-4. LootLabs
-5. Lockr
-6. Rekonise
-7. Boost.ink
-8. Sub2Unlock
-9. AdMaven
+**XIYU SKIP SHORTLINK** adalah aplikasi web untuk memilih layanan
+shortlink, memasukkan tautan, lalu menjalankan alur pemrosesan sesuai
+layanan yang dipilih.
 
-## 🚀 Menjalankan secara lokal
+Aplikasi mempertahankan UI lama XIYU dengan identitas baru: tema
+rose-pink dan charcoal, kartu rounded, efek glow, dropdown berdesain,
+serta animasi transisi. Fokusnya tetap sederhana: pengguna memilih
+layanan dari atas kolom input, memasukkan URL, lalu menekan tombol
+proses.
 
-**Persyaratan:** Node.js yang kompatibel dengan Next.js 15 dan npm.
+> **Catatan integrasi:** Safelinku/SFL diproses melalui endpoint API
+> XIYU. Delapan pilihan lainnya saat ini membuka resolver eksternal
+> BypassLinks di tab baru. Opsi tersebut belum memakai backend internal
+> yang sama dengan Safelinku.
 
-```bash
-# 1. Ekstrak project, lalu masuk ke folder project
+::: {align="center"}
+`<img src="https://img.shields.io/badge/9-SHORTLINK%20OPTIONS-CB799B?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/1-UNIFIED%20INTERFACE-493044?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/ANIMATED-UI-6C4058?style=for-the-badge"/>`{=html}
+:::
+
+------------------------------------------------------------------------
+
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=FEATURES&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Features section"/>`{=html}
+:::
+
+## ✨ Fitur Utama
+
+```{=html}
+<table>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td width="50%" valign="top">
+```
+### 🎛️ Pemilih shortlink
+
+Dropdown berdesain di atas kolom input. Pengguna dapat memilih layanan
+tanpa berpindah halaman.
+
+```{=html}
+</td>
+```
+```{=html}
+<td width="50%" valign="top">
+```
+### 🔗 Input URL
+
+Kolom untuk memasukkan tautan shortlink. Placeholder mengikuti layanan
+yang dipilih.
+
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td width="50%" valign="top">
+```
+### ⚙️ Proses Safelinku
+
+Mengirim URL ke endpoint internal `/api/bypass`, lalu meneruskan request
+ke API XIYU.
+
+```{=html}
+</td>
+```
+```{=html}
+<td width="50%" valign="top">
+```
+### 🌐 Resolver eksternal
+
+Delapan pilihan tambahan membuka BypassLinks di tab baru. Hasil
+bergantung pada layanan eksternal.
+
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+<tr>
+```
+```{=html}
+<td width="50%" valign="top">
+```
+### ⏳ Status proses
+
+Alur Safelinku menampilkan status proses dan hasil pemrosesan.
+
+```{=html}
+</td>
+```
+```{=html}
+<td width="50%" valign="top">
+```
+### 📋 Aksi hasil
+
+Destination URL dapat disalin atau dibuka. Tombol reset membersihkan
+input dan hasil.
+
+```{=html}
+</td>
+```
+```{=html}
+</tr>
+```
+```{=html}
+</table>
+```
+
+------------------------------------------------------------------------
+
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=SUPPORTED%20SHORTLINKS&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Supported shortlinks section"/>`{=html}
+:::
+
+## 🔗 Daftar layanan
+
+   \#  Layanan           Integrasi
+  ---- ----------------- --------------------
+   01  Safelinku / SFL   API XIYU
+   02  Linkvertise       Resolver eksternal
+   03  Work.ink          Resolver eksternal
+   04  LootLabs          Resolver eksternal
+   05  Lockr             Resolver eksternal
+   06  Rekonise          Resolver eksternal
+   07  Boost.ink         Resolver eksternal
+   08  Sub2Unlock        Resolver eksternal
+   09  AdMaven           Resolver eksternal
+
+------------------------------------------------------------------------
+
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=HOW%20IT%20WORKS&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="How it works section"/>`{=html}
+:::
+
+## 🔄 Alur kerja
+
+``` mermaid
+flowchart TD
+    A["🎛️ Pilih layanan"] --> B["🔗 Masukkan URL"]
+    B --> C["⚡ Jalankan proses"]
+    C --> D{"Layanan dipilih?"}
+    D -->|Safelinku / SFL| E["API internal XIYU"]
+    E --> F["Destination URL"]
+    F --> G["📋 Salin atau buka"]
+    D -->|8 layanan lain| H["Resolver BypassLinks"]
+    H --> I["🌐 Dibuka di tab baru"]
+    style A fill:#493044,stroke:#CB799B,color:#FFFFFF
+    style B fill:#493044,stroke:#CB799B,color:#FFFFFF
+    style C fill:#6C4058,stroke:#E8A8BC,color:#FFFFFF
+    style D fill:#211827,stroke:#CB799B,color:#FFFFFF
+    style E fill:#493044,stroke:#CB799B,color:#FFFFFF
+    style F fill:#6C4058,stroke:#E8A8BC,color:#FFFFFF
+    style G fill:#493044,stroke:#CB799B,color:#FFFFFF
+    style H fill:#493044,stroke:#CB799B,color:#FFFFFF
+    style I fill:#6C4058,stroke:#E8A8BC,color:#FFFFFF
+```
+
+------------------------------------------------------------------------
+
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=INSTALLATION&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Installation section"/>`{=html}
+:::
+
+## 🚀 Instalasi lokal
+
+**Persyaratan:** Node.js yang kompatibel dengan Next.js project dan npm.
+
+### 1. Masuk ke folder project
+
+``` bash
 cd AIXI-SAFELINKU-main
+```
 
-# 2. Pasang dependency
+### 2. Install dependency
+
+``` bash
 npm install
+```
 
-# 3. Jalankan development server
+### 3. Jalankan development server
+
+``` bash
 npm run dev
 ```
 
@@ -65,111 +221,118 @@ Buka `http://localhost:3000` di browser.
 
 ### Build production
 
-```bash
+``` bash
 npm run build
 npm start
 ```
 
-## 🔄 Alur kerja
+------------------------------------------------------------------------
 
-```text
-Pilih shortlink → Tempel URL → Klik RESOLVE LINK
-                                │
-                ┌───────────────┴────────────────┐
-                │                                │
-          Safelinku / SFL                Pilihan lainnya
-                │                                │
-        POST /api/bypass             BypassLinks dibuka
-                │                       di tab baru
-        XIYU API /bypass
-                │
-        Destination URL
-                │
-         Copy / Buka
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=text&text=API%20REFERENCE&fontSize=27&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="API reference section"/>`{=html}
+:::
+
+## ⚙️ Endpoint
+
+### API internal
+
+``` http
+POST /api/bypass
+Content-Type: application/json
 ```
-
-## 🛠️ Endpoint yang digunakan
-
-### Endpoint internal Next.js
-
-`POST /api/bypass`
 
 Request body:
 
-```json
+``` json
 {
   "url": "https://sfl.gl/example"
 }
 ```
 
-Route ini memvalidasi URL tidak kosong, lalu meneruskan request ke API XIYU. Response JSON dari upstream diteruskan kembali ke frontend. Jika upstream memberi JSON tidak valid atau request gagal, route mengembalikan error.
+Route internal meneruskan URL ke API Safelinku XIYU dan mengembalikan
+response ke frontend.
 
-### Upstream API Safelinku
+### API upstream Safelinku
 
-Base URL yang digunakan source code:
-
-```text
+``` text
 https://xiyu-safelinku-api.vercel.app
 ```
 
-Frontend API information juga mencantumkan endpoint berikut:
+Endpoint yang dirujuk aplikasi:
 
-- `GET /bypass?url=https://sfl.gl/example`
-- `GET /bypass?slug=example`
-- `GET /api/health`
+-   `GET /bypass?url=<shortlink-url>`
+-   `GET /bypass?slug=<slug>`
+-   `GET /api/health`
 
-> Endpoint di atas merupakan informasi API upstream yang ditampilkan aplikasi. Source project ini hanya menyertakan route proxy Next.js `POST /api/bypass`, bukan source backend upstream.
+Source aplikasi ini menyertakan route proxy Next.js, bukan source
+backend upstream.
 
-### Resolver pilihan lain
+### Resolver eksternal
 
-Untuk pilihan selain Safelinku, frontend membuka URL resolver dengan parameter URL yang sudah di-encode:
+Pilihan selain Safelinku membuka resolver dengan URL yang di-encode:
 
-```text
+``` text
 https://bypass-links.com/?url=<encoded-url>&ref=xiyu
 ```
 
-Resolver dibuka di tab baru. Jika tidak terbuka, browser mungkin memblokir pop-up.
+Resolver dibuka di tab baru. Jika tidak terbuka, periksa apakah browser
+memblokir pop-up.
+
+------------------------------------------------------------------------
+
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=header&text=PROJECT%20STRUCTURE&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Project structure section"/>`{=html}
+:::
 
 ## 📁 Struktur project
 
-```text
+``` text
 AIXI-SAFELINKU-main/
 ├── app/
 │   ├── api/
 │   │   └── bypass/
-│   │       └── route.ts       # Proxy API Safelinku
-│   ├── globals.css            # Tema, layout, dan animasi UI
-│   ├── layout.tsx             # Metadata dan root layout
-│   └── page.tsx                # UI dan alur interaksi
-├── docs/
-│   └── xiyu-banner.svg         # Banner SVG animasi README
+│   │       └── route.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 ├── public/
-│   └── hero.jpg                # Gambar hero aplikasi
+│   └── hero.jpg
 ├── package.json
 └── README.md
 ```
 
+------------------------------------------------------------------------
+
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=rect&color=0:211827,100:70435C&height=90&section=VISUAL%20IDENTITY&text=VISUAL%20IDENTITY&fontSize=25&fontColor=FCEAF2&animation=fadeIn&fontAlignY=55" width="100%" alt="Visual identity section"/>`{=html}
+:::
+
 ## 🎨 Identitas visual
 
-- **Palet:** rose-pink, dusty pink, putih lembut, dan charcoal.
-- **Gaya:** clean, glassmorphism, rounded cards, dan tipografi elegan.
-- **Animasi:** glow, spinner, indikator status, hover, dan transisi dropdown.
-- **Banner README:** SVG dengan orbit, sparkle, glow, dan panel UI yang bergerak halus.
+::: {align="center"}
+`<img src="https://img.shields.io/badge/ROSE%20PINK-CB799B?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/DEEP%20PURPLE-493044?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/CHARCOAL-211827?style=for-the-badge"/>`{=html}
+`<img src="https://img.shields.io/badge/SOFT%20PINK-E8A8BC?style=for-the-badge"/>`{=html}
+:::
 
-Sebagian platform Git hosting dapat membatasi animasi SVG demi keamanan. Banner tetap tampil sebagai gambar statis bila animasinya tidak didukung.
+-   **Glassmorphism:** kartu transparan dan efek blur.
+-   **Soft glow:** pencahayaan lembut pada elemen visual.
+-   **Rounded UI:** komponen dengan sudut membulat.
+-   **Responsive layout:** menyesuaikan ukuran layar.
+-   **Micro animation:** hover, loading, dropdown, dan transisi.
 
-## 🔐 Penggunaan yang bertanggung jawab
+------------------------------------------------------------------------
 
-Gunakan tool hanya pada tautan yang memang boleh kamu akses dan proses. Hormati ketentuan layanan shortlink, situs tujuan, serta hak pemilik konten. Jangan gunakan untuk melewati akses berbayar, autentikasi, atau pembatasan keamanan.
+::: {align="center"}
+`<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B4969,55:493044,100:211827&height=180&section=footer&text=XIYU%20CODEX&fontSize=32&fontColor=FCEAF2&animation=fadeIn&fontAlignY=65" width="100%" alt="XIYU CODEX footer banner"/>`{=html}
 
-## © Copyright
+`<img src="https://img.shields.io/badge/COPYRIGHT-©%20XIYU%20CODEX-E8A8BC?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="Copyright XIYU CODEX"/>`{=html}
 
-**© XIYU CODEX. All rights reserved.**
+`<br/>`{=html}
 
-XIYU SKIP SHORTLINK, identitas visual, dan dokumentasi ini merupakan bagian dari project XIYU CODEX. Jangan menghapus atribusi copyright saat mendistribusikan ulang. Penggunaan atau distribusi ulang source code harus mengikuti izin dari pemilik project.
-
-<div align="center">
-  <img src="docs/xiyu-banner.svg" alt="XIYU CODEX animated mark" width="72%" />
-  <br />
-  <sub>Made with 💗, clean code, and a little sparkle ✦</sub>
-</div>
+`<sub>`{=html}© XIYU CODEX. All rights reserved.`</sub>`{=html}
+`<br/>`{=html} `<sub>`{=html}XIYU SKIP SHORTLINK · AIXI
+PROJECT`</sub>`{=html} `<br/>`{=html}`<br/>`{=html} `<sub>`{=html}🔗
+Clean links. Clear flow. ✦`</sub>`{=html}
+:::
