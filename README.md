@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/xiyu-banner.svg" alt="XIYU SKIP SHORTLINK • Animated banner" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=30&duration=2500&pause=900&color=BDA4FF&center=true&vCenter=true&width=900&height=100&lines=XIYU+SKIP+SHORTLINK" alt="" width="100%" />
   <br />
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15.5.27-111111?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img alt="React" src="https://img.shields.io/badge/React-19.1.0-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" />
